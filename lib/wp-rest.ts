@@ -8,7 +8,7 @@ return res.json()
 }
 
 
-export async function fetchValenciaBySlug(slug: string) {
+export async function fetchPageBySlug(slug: string) {
 const res = await fetch(`${WP_REST_BASE}/posts?slug=${slug}`)
 if (!res.ok) throw new Error("REST fetch error")
 const data = await res.json()

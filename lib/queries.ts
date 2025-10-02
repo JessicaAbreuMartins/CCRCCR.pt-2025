@@ -22,3 +22,16 @@ description
 }
 }
 }`
+
+export const VALENCIAS_LIST_QUERY = `
+  query Valencias {
+    posts(where: {categoryName: "valencias"}) {
+      nodes {
+        id
+        slug
+        title
+        excerpt
+      }
+    }
+  }
+`
